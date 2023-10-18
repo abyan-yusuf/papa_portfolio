@@ -1,11 +1,13 @@
 const Nav = (props) => {
   return (
     <div>
-      <a href="/" className="flex rounded-lg border-2 border-borderc group transition-all duration-150">
-        <p className="text-white bg-fg py-4 px-5 rounded-lg text-xl text-white group-hover:bg-gb group-hover:text-black">
-          <i class={props.icon}></i>
+      <a href="/" className="flex rounded-lg border-2 border-borderc group " >
+        <p className="bg-fg py-4 px-5 rounded-lg text-xl text-white group-focus:bg-gb group-hover:text-black group-hover:bg-gb group-focus:text-black transition-background-color duration-500 ease-linear">
+          <i className={'fa-solid fa-' + props.icon}></i>
         </p>
-        <p className="p-5 text-center font-bold text-md group-hover:text-gb">{props.text}</p>
+        <p className="text-gray p-5 text-center font-bold text-sm group-hover:text-gb transition-colors duration-500 ease-in-out group-hover:animate-bounce">
+          {props.text}
+        </p>
       </a>
     </div>
   );
