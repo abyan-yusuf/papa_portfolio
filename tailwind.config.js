@@ -18,7 +18,7 @@ export default {
       gray: "#a2a2a2",
     },
     backgroundImage: {
-      working: "url('../../public/banner_bg2.png')",
+      working: "url('banner_bg2.png')",
     },
     extend: {},
   },

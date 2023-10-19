@@ -14,7 +14,7 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % mySkills.length);
-    }, 3000); // Change the delay to 2000 milliseconds (2 seconds)
+    }, 2000); // Change the delay to 2000 milliseconds (2 seconds)
 
     return () => {
       clearInterval(interval);
@@ -28,7 +28,7 @@ const Hero = () => {
 
   return (
     <header className="bg-bodybc ml-64 pl-5 w-auto h-screen py-20 bg-working bg-cover">
-      <h1 className="heading text-5xl text-white font-bold leading-tight transition-all delay-500">
+      <h1 className="heading text-5xl text-white font-bold leading-tight">
         HI, I'M AMDAD! I'M <br />
         <span className="text-gb font-black">{item}</span>
       </h1>
