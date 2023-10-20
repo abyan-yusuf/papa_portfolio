@@ -31,7 +31,7 @@ const About = () => {
         <div className="w-1/2 relative">
           <img src={Image} className="h-52 w-auto absolute end-16 z-0 animate-animation" />
           <img src={Smile} className="mt-10 h-3/4 z-10 absolute" />
-          <div className="p-7 bg-gb w-72 absolute end-16 top-2/3 flex items-center justify-between rounded-lg">
+          <div className=" z-20 p-7 bg-gb w-72 absolute end-16 top-2/3 flex items-center justify-between rounded-lg">
             <p className="inline">
               <i className="fa-solid fa-medal text-4xl text-gb p-3 bg-white inline"></i>
             </p>
