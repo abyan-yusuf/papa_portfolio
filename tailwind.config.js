@@ -20,7 +20,7 @@ export default {
       gray: "#a2a2a2",
     },
     backgroundImage: {
-      working: "url('banner_bg2.png')",
+      working: "url('public/banner_bg2.png')",
     },
     animation: {
       animation: 'in-out 3.5s linear infinite'
