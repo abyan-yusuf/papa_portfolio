@@ -1,20 +1,20 @@
+import { Link } from "react-router-dom";
 import Nav from "./Nav/Nav";
 
 function Navbar() {
   return (
     <nav className="w-64 h-full bg-bg fixed overflow-y-scroll no-scrollbar">
       <div>
-        <a
-          href="/"
+        <a href='/'
           className="bg-fg py-12 px-8 text-3xl font-semibold flex justify-center"
         >
           <p className="font-black font-mono tracking-widest text-white">AMDAD</p>
         </a>
       </div>
       <div className="pt-12 px-6">
-        <Nav icon="house" text="HOME" />
+        <Nav icon="house" text="HOME" url='#hero' />
         <div className="py-4"></div>
-        <Nav icon="address-card" text="ABOUT ME" />
+        <Nav icon="address-card" text="ABOUT ME" url='#about' />
         <div className="py-4"></div>
         <Nav icon="briefcase" text="SERVICE" />
         <div className="py-4"></div>

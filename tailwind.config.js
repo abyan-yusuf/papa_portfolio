@@ -7,7 +7,9 @@ export default {
       bg: "#09101a",
       gb: "#55e6a5",
       bodybc: "#02050a",
+      white: 'white'
     },
+
     borderColor: {
       borderc: "#151c25",
     },
@@ -19,6 +21,22 @@ export default {
     },
     backgroundImage: {
       working: "url('banner_bg2.png')",
+    },
+    animation: {
+      animation: 'in-out 3.5s linear infinite'
+    },
+    keyframes: {
+      'in-out' : {
+        '0%': {
+          transform: 'scale(1)'
+        },
+        '50%': {
+          transform: 'scale(1.1)'
+        },
+        '100%': {
+          transform: 'scale(1)'
+        },
+      },
     },
     extend: {},
   },
@@ -32,6 +50,18 @@ export default {
         ".no-scrollbar": {
           "ms-overflow-style": "none",
           "scrollbar-width": "none",
+        },
+        ".design-scrollbar::-webkit-scrollbar": {
+          width: "15px",
+          padding: '10px'
+        },
+        ".design-scrollbar::-webkit-scrollbar-track": {
+          backgroundColor: "black",
+        },
+        ".design-scrollbar::-webkit-scrollbar-thumb": {
+          backgroundColor: "#2d2d2d",
+          width: "10px",
+          borderRadius: "10px",
         },
       };
 
