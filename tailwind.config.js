@@ -3,15 +3,17 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     backgroundColor: {
-      fg: "#222831",
+      fg: "#151c25",
       bg: "#09101a",
       gb: "#55e6a5",
       bodybc: "#02050a",
-      white: 'white'
+      white: "white",
+      active: "#55e6a5",
     },
 
     borderColor: {
       borderc: "#151c25",
+      gb: "#55e6a5",
     },
     textColor: {
       gb: "#55e6a5",
@@ -23,18 +25,18 @@ export default {
       working: "url('./public/banner_bg2.png')",
     },
     animation: {
-      animation: 'in-out 3.5s linear infinite'
+      animation: "in-out 4.5s linear infinite",
     },
     keyframes: {
-      'in-out' : {
-        '0%': {
-          transform: 'scale(1)'
+      "in-out": {
+        "0%": {
+          transform: "scale(1)",
         },
-        '50%': {
-          transform: 'scale(1.1)'
+        "50%": {
+          transform: "scale(1.1)",
         },
-        '100%': {
-          transform: 'scale(1)'
+        "100%": {
+          transform: "scale(1)",
         },
       },
     },
@@ -53,7 +55,7 @@ export default {
         },
         ".design-scrollbar::-webkit-scrollbar": {
           width: "15px",
-          padding: '10px'
+          padding: "10px",
         },
         ".design-scrollbar::-webkit-scrollbar-track": {
           backgroundColor: "black",
