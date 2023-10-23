@@ -22,7 +22,7 @@ export default {
       gray: "#a2a2a2",
     },
     backgroundImage: {
-      working: "url('./public/banner_bg2.png')",
+      'working': "url('/public/banner_bg2.png')",
     },
     animation: {
       animation: "in-out 4.5s linear infinite",
