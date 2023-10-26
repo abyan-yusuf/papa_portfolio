@@ -2,7 +2,7 @@ import { useState } from "react";
 import Nav from "./Nav/Nav";
 
 function Navbar() {
-  const navbarDefaultStyle = "hidden fixed overflow-y-scroll no-scrollbar";
+  const navbarDefaultStyle = "hidden fixed md:inline overflow-y-scroll no-scrollbar";
   const buttonDefaultStyle = "px-4 py-3 bg-gb md:hidden z-10 absolute m-2 text-black text-2xl";
   const iconDefaultStyle = "bars";
   const [navbarStyle, setNavbarStyle] = useState(navbarDefaultStyle);
@@ -16,7 +16,7 @@ function Navbar() {
       setButtonStyle(buttonDefaultStyle)
       setIconStyle(iconDefaultStyle)
     } else {
-      setNavbarStyle("w-64 h-full bg-bg fixed overflow-y-scroll no-scrollbar");
+      setNavbarStyle("w-64 h-full bg-bg md:inline fixed overflow-y-scroll no-scrollbar");
       setButtonStyle("px-4 py-3 bg-fg md:hidden z-10 absolute left-64 m-2 text-white text-2xl")
       setIconStyle('xmark')
     }
@@ -39,7 +39,7 @@ function Navbar() {
             </p>
           </a>
         </div>
-        <div className="pt-12 px-6">
+        <div className="pt-12 px-6 bg-bg">
           <Nav icon="house" text="HOME" url="#hero" />
           <div className="py-4"></div>
           <Nav icon="address-card" text="ABOUT ME" url="#about" />
