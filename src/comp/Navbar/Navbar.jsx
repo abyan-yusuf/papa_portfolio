@@ -32,7 +32,7 @@ function Navbar() {
           >
             <p className="font-black font-lithos tracking-widest text-white flex items-center">
               <img
-                src="/public/Screenshot 2023-10-26 115300.png"
+                src="./public/Screenshot 2023-10-26 115300.png"
                 className="w-[45px] inline-block mr-[10px]"
               />
               AMDAD
