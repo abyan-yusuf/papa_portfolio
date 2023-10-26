@@ -6,8 +6,8 @@ const Service = () => {
       <h4 className="text-gb text-xl tracking-wide font-medium text-center">
         MY SERVICE
       </h4>
-      <h1 className="text-white text-5xl font-medium leading-tight mb-40 text-center">
-        Lorem ipsum dolor sit amet consectetur adipisicing
+      <h1 className="text-white text-4xl font-medium leading-tight mb-40 text-center">
+        Global ERP Project Implementation, Oracle ERP, SAP{" "}
       </h1>
       <div className="grid grid-cols-3 gap-4">
         <Services

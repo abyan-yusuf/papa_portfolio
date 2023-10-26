@@ -13,7 +13,7 @@ const Nav = (props) => {
         makeActive("ABOUT ME");
       } else if (scrollY > 1500) {
         makeActive("SERVICE");
-      }
+      } 
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -32,7 +32,7 @@ const Nav = (props) => {
         <p
           className={
             props.text == active
-              ? "py-4 px-5 rounded-lg text-xl bg-active text-black"
+              ? "bg-active py-4 px-5 rounded-lg text-xl text-black"
               : "bg-fg py-4 px-5 rounded-lg text-xl text-white group-focus:bg-gb group-hover:text-black group-hover:bg-gb group-focus:text-black transition-background-color duration-500 ease-linear"
           }
         >
