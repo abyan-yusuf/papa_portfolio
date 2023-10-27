@@ -2,7 +2,7 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <section id="skill" className="py-20 bg-bodybc ml-64 pl-5">
+    <section id="skill" className="py-20 bg-bodybc md:ml-64 px-5">
       <h4 className="text-gb text-xl tracking-wide font-medium text-center">
         MY SKILLS
       </h4>
