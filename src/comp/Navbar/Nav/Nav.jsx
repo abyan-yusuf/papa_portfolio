@@ -3,7 +3,6 @@ const Nav = (props) => {
   const [active, makeActive] = useState("HOME");
 
   useEffect(() => {
-    // Add a scroll event listener
     const handleScroll = () => {
       const scrollY = window.scrollY;
 
@@ -13,7 +12,7 @@ const Nav = (props) => {
         makeActive("ABOUT ME");
       } else if (scrollY > 1500) {
         makeActive("SERVICE");
-      } 
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -24,31 +23,29 @@ const Nav = (props) => {
   }, []);
 
   return (
-    <div>
-      <a
-        href={props.url}
-        className="flex rounded-lg border-2 border-borderc group"
+    <a
+      href={props.url}
+      className="flex w-48 rounded-lg border-2 border-borderc group"
+    >
+      <p
+        className={
+          props.text == active
+            ? "bg-active md:py-4 py-3 px-3 rounded-lg md:text-xl text-sm text-black"
+            : "bg-fg md:py-4 py-3 px-3 rounded-lg md:text-xl text-sm text-white group-focus:bg-gb group-hover:text-black group-hover:bg-gb group-focus:text-black transition-background-color duration-500 ease-linear"
+        }
       >
-        <p
-          className={
-            props.text == active
-              ? "bg-active py-4 px-5 rounded-lg text-xl text-black"
-              : "bg-fg py-4 px-5 rounded-lg text-xl text-white group-focus:bg-gb group-hover:text-black group-hover:bg-gb group-focus:text-black transition-background-color duration-500 ease-linear"
-          }
-        >
-          <i className={"fa-solid fa-" + props.icon}></i>
-        </p>
-        <p
-          className={
-            props.text == active
-              ? "text-gb p-5 text-center font-bold text-sm group-hover:text-gb transition-colors duration-500 ease-in-out group-hover:animate-bounce"
-              : "text-gray p-5 text-center font-bold text-sm group-hover:text-gb transition-colors duration-500 ease-in-out group-hover:animate-bounce"
-          }
-        >
-          {props.text}
-        </p>
-      </a>
-    </div>
+        <i className={"fa-solid fa-" + props.icon}></i>
+      </p>
+      <p
+        className={
+          props.text == active
+            ? "text-gb px-3 py-3 text-center font-bold text-sm group-hover:text-gb transition-colors duration-500 ease-in-out group-hover:animate-bounce"
+            : "text-gray px-3 py-3 text-center font-bold text-sm group-hover:text-gb transition-colors duration-500 ease-in-out group-hover:animate-bounce"
+        }
+      >
+        {props.text}
+      </p>
+    </a>
   );
 };
 
