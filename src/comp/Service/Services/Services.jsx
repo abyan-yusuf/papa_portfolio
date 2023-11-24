@@ -11,11 +11,11 @@ const Services = ({ img, text, desc }) => {
         </div>
       </div>
       <div
-        className="flex justify-center z-0 absolute top-40 left-24"
+        className="flex justify-center max-h-[15px] items-center z-0 absolute top-[40vh] left-24"
       >
         <a
           href="#"
-          className="text-white py-4 rounded-md border-2 hover:bg-gb hover:text-black text-lg border-gb px-6 transition-colors duration-500 font-normal inline-block"
+          className="text-white py-2 rounded-md border-2 hover:bg-gb hover:text-black text-lg border-gb px-4 transition-colors duration-500 font-normal inline-block"
         >
           Read More
         </a>

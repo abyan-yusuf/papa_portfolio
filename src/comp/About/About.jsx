@@ -1,7 +1,7 @@
-import Ambition from "../../../public/about_1.png";
-import Purpose from "../../../public/about_2.png";
-import Smile from "../../../public/about_img_2.jpg";
-import Image from "../../../public/about_shapes.png";
+import Ambition from "/about_1.png";
+import Purpose from "/about_2.png";
+import Smile from "/about_img_2.jpg";
+import Image from "/about_shapes.png";
 const About = () => {
   return (
     <section id="about" className="md:py-20 pt-20 pb-96 bg-bodybc md:ml-64 px-5">
@@ -10,7 +10,7 @@ const About = () => {
         PROJECT MANAGEMENT | STRATEGIC PLANNING | BUSINESS PROCESS DESIGN |
       </h1>
       <div className="flex flex-wrap space-y-10">
-        <div className="basis-full">
+        <div className="basis-full md:basis-1/2">
           <img src={Ambition} className="w-32 mb-10 h-auto" />
           <h2 className="text-white text-3xl font-medium">My Ambition</h2>
           <p className="text-gray mt-5 leading-7 text-lg">
@@ -30,7 +30,7 @@ const About = () => {
             systems that solve business problems and provide business results.
           </p>
         </div>
-        <div className="basis-full relative">
+        <div className="basis-full md:basis-1/2 relative">
           <img
             src={Image}
             className="h-52 w-auto absolute md:end-16 z-0 animate-animation"
@@ -38,8 +38,8 @@ const About = () => {
           <div className="flex justify-center">
             <img src={Smile} className="mt-10 md:h-2/4 basis-full z-10 absolute border-8 border-borderc" />
           </div>
-          <div className=" z-20 p-5 bg-gb w-64 absolute md:end-16 md:bottom-80 top-80 start-20 flex items-center justify-between rounded-lg">
-            <p className="inline">
+          <div className=" z-20 p-5 bg-gb w-64 absolute md:w-72 md:h-32 md:bottom-80 top-80 start-20 flex items-center justify-between rounded-lg">
+            <p className="inline md:mr-5">
               <i className="fa-solid fa-medal md:text-4xl text-3xl text-gb p-3 bg-white inline"></i>
             </p>
             <div>

@@ -25,13 +25,13 @@ const Nav = (props) => {
   return (
     <a
       href={props.url}
-      className="flex w-48 rounded-lg border-2 border-borderc group"
+      className="flex items-center w-48 rounded-lg border-2 border-borderc group"
     >
       <p
         className={
           props.text == active
-            ? "bg-active md:py-4 py-3 px-3 rounded-lg md:text-xl text-sm text-black"
-            : "bg-fg md:py-4 py-3 px-3 rounded-lg md:text-xl text-sm text-white group-focus:bg-gb group-hover:text-black group-hover:bg-gb group-focus:text-black transition-background-color duration-500 ease-linear"
+            ? "bg-active md:py-4 md:px-4 py-3 px-3 rounded-lg md:text-xl text-sm text-black"
+            : "bg-fg md:py-4 md:px-4 py-3 px-3 rounded-lg md:text-xl text-sm text-white group-focus:bg-gb group-hover:text-black group-hover:bg-gb group-focus:text-black transition-background-color duration-500 ease-linear"
         }
       >
         <i className={"fa-solid fa-" + props.icon}></i>

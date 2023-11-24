@@ -3,16 +3,20 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     backgroundColor: {
-      fg: "#151c25",
+      fg: "#151c25 !important",
       bg: "#09101a",
       gb: "#55e6a5",
       bodybc: "#02050a",
       white: "white",
-      active: "#55e6a5",
+      active: "#55e6a5 !important",
     },
 
     borderColor: {
       borderc: "#151c25",
+      gb: "#55e6a5",
+      white: "#fff",
+    },
+    textDecorationColor: {
       gb: "#55e6a5",
     },
     textColor: {

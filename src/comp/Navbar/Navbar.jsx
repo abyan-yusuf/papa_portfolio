@@ -2,8 +2,10 @@ import { useState } from "react";
 import Nav from "./Nav/Nav";
 
 function Navbar() {
-  const navbarDefaultStyle = "hidden fixed md:inline overflow-y-scroll no-scrollbar";
-  const buttonDefaultStyle = "px-4 py-3 bg-gb md:hidden z-10 absolute m-2 text-black text-2xl";
+  const navbarDefaultStyle =
+    "w-64 h-full bg-bg fixed overflow-y-scroll no-scrollbar";
+  const buttonDefaultStyle =
+    "px-4 py-3 bg-gb md:hidden absolute z-10 m-2 text-black text-2xl";
   const iconDefaultStyle = "bars";
   const [navbarStyle, setNavbarStyle] = useState(navbarDefaultStyle);
   const [buttonStyle, setButtonStyle] = useState(buttonDefaultStyle);
@@ -13,20 +15,22 @@ function Navbar() {
   const changeNavbarStyle = () => {
     if (isStyleChanged) {
       setNavbarStyle(navbarDefaultStyle);
-      setButtonStyle(buttonDefaultStyle)
-      setIconStyle(iconDefaultStyle)
+      setButtonStyle(buttonDefaultStyle);
+      setIconStyle(iconDefaultStyle);
     } else {
-      setNavbarStyle("w-64 h-full bg-bg md:inline fixed overflow-y-scroll no-scrollbar");
-      setButtonStyle("px-4 py-3 bg-fg md:hidden z-10 absolute left-64 m-2 text-white text-2xl")
-      setIconStyle('xmark')
+      setNavbarStyle("w-64 h-full bg-bg md:inline");
+      setButtonStyle(
+        "px-4 py-3 bg-fg md:hidden absolute z-10 bottom-1/2 left-64 m-2 text-white text-2xl"
+      );
+      setIconStyle("xmark");
     }
     setIsStyleChanged(!isStyleChanged);
   };
   const changeNavbarStyleOnNavClick = () => {
-      setNavbarStyle(navbarDefaultStyle);
+    setNavbarStyle(navbarDefaultStyle);
   };
   return (
-    <div>
+    <>
       <nav className={navbarStyle}>
         <div>
           <a
@@ -59,16 +63,12 @@ function Navbar() {
           <div className="py-3"></div>
         </div>
       </nav>
-      <div className="">
-        <button
-          className={buttonStyle}
-          onClick={changeNavbarStyle}
-        >
+      <div>
+        <button className={buttonStyle} onClick={changeNavbarStyle}>
           <i className={"fa-solid fa-" + iconStyle}></i>
         </button>
       </div>
-    </div>
+    </>
   );
 }
 export default Navbar;
-
