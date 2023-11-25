@@ -10,7 +10,7 @@ const Nav = (props) => {
         makeActive("HOME");
       } else if (scrollY < 1400) {
         makeActive("ABOUT ME");
-      } else if (scrollY > 1500) {
+      } else if (scrollY < 1500) {
         makeActive("SERVICE");
       }
     };
@@ -31,7 +31,7 @@ const Nav = (props) => {
         className={
           props.text == active
             ? "bg-active md:py-4 md:px-4 py-3 px-3 rounded-lg md:text-xl text-sm text-black"
-            : "bg-fg md:py-4 md:px-4 py-3 px-3 rounded-lg md:text-xl text-sm text-white group-focus:bg-gb group-hover:text-black group-hover:bg-gb group-focus:text-black transition-background-color duration-500 ease-linear"
+            : "bg-fg md:py-4 md:px-4 py-3 px-3 rounded-lg md:text-xl text-sm text-white group-focus:bg-gb group-focus:text-black group-hover:text-black group-hover:bg-gb transition-background-color duration-500 ease-linear"
         }
       >
         <i className={"fa-solid fa-" + props.icon}></i>

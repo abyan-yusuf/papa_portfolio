@@ -41,7 +41,7 @@ const Hero = () => {
         <div className="flex w-96 justify-between pt-20">
           <a
             href="Amdad-CV-P-v.0.1.docx"
-            className=" text-black bg-gb py-5 transition-colors duration-500 ease-in-out hover:bg-bg hover:text-white px-8 font-medium"
+            className=" text-black bg-gb py-3 rounded-md transition-colors duration-500 ease-in-out hover:bg-fg hover:text-white px-8 font-medium"
             target="_blank"
             download
           >

@@ -55,7 +55,7 @@ function Navbar() {
           <div className="py-3"></div>
           <Nav icon="wrench" text="SKILLS" url="#skill" />
           <div className="py-3"></div>
-          <Nav icon="message" text="PORTFOLIO" />
+          <Nav icon="message" text="PORTFOLIO" url="#portfolio" />
           <div className="py-3"></div>
           <Nav icon="blog" text="BLOG" />
           <div className="py-3"></div>

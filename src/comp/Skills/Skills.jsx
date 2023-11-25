@@ -13,7 +13,7 @@ const Skills = () => {
         <h1 className="text-white text-4xl font-medium leading-tight mb-20 text-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </h1>
-        <div className="tabs block tabs-boxed bg-transparent">
+        <div className="tabs block tabs-boxed bg-opacity-0">
           <div className="flex justify-center space-x-12 mb-10">
             <a
               className={`tab ${

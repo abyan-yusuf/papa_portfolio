@@ -3,6 +3,7 @@ import Hero from "./comp/Hero/Hero";
 import About from "./comp/About/About";
 import Service from "./comp/Service/Service";
 import Skills from "./comp/Skills/Skills";
+import Portfolio from "./comp/Portfolio/Portfolio";
 const App = () => {
   return (
     <>
@@ -10,7 +11,8 @@ const App = () => {
       <Hero />
       <About />
       <Service />
-      <Skills/>
+      <Skills />
+      <Portfolio />
     </>
   );
 };

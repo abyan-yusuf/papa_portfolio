@@ -4,26 +4,26 @@ export default {
   theme: {
     backgroundColor: {
       fg: "#151c25 !important",
-      bg: "#09101a",
-      gb: "#55e6a5",
-      bodybc: "#02050a",
-      white: "white",
+      bg: "#09101a !important",
+      gb: "#55e6a5 !important",
+      bodybc: "#02050a !important",
+      white: "white !important",
       active: "#55e6a5 !important",
     },
 
     borderColor: {
-      borderc: "#151c25",
-      gb: "#55e6a5",
-      white: "#fff",
+      borderc: "#151c25 !important",
+      gb: "#55e6a5 !important",
+      white: "#fff !important",
     },
     textDecorationColor: {
-      gb: "#55e6a5",
+      gb: "#55e6a5 !important",
     },
     textColor: {
-      gb: "#55e6a5",
-      black: "#000",
-      white: "#fff",
-      gray: "#a2a2a2",
+      gb: "#55e6a5 !important",
+      black: "#000 !important",
+      white: "#fff !important",
+      gray: "#a2a2a2 !important",
     },
     backgroundImage: {
       working: "url('/public/banner_bg2.png')",
