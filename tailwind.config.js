@@ -30,6 +30,7 @@ export default {
     },
     animation: {
       animation: "in-out 4.5s linear infinite",
+      marquee: "marquee 10s linear infinite"
     },
     fontFamily: {
       lithos: "Lithos Pro Regular",
@@ -46,6 +47,14 @@ export default {
           transform: "scale(1)",
         },
       },
+      'marquee': {
+        '0%': {
+            transform: 'translateX(100%)',
+        },
+        '100%': {
+            transform: 'translateX(-100%)',
+        },
+},
     },
     extend: {},
   },
@@ -72,6 +81,9 @@ export default {
           width: "10px",
           borderRadius: "10px",
         },
+        '.text-stroke': {
+          '-webkit-text-stroke': '1px #333'
+        }
       };
 
       addUtilities(newUtilities);

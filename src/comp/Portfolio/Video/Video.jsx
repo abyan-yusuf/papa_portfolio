@@ -10,7 +10,7 @@ const Video = (props) => {
         <div className="modal-box bg-opacity-0 w-[70%] max-w-full">
           <form method="dialog">
             {/* if there is a button in form, it will close the modal */}
-            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-white">
               ✕
             </button>
           </form>
