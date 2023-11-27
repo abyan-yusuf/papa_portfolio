@@ -27,7 +27,7 @@ const MouseFollow = () => {
   };
   return (
     <motion.div
-      className="w-8 h-8 bg-opacity-0 border-2 border-white rounded-full fixed top-0 left-0 z-20"
+      className="w-8 h-8 bg-opacity-0 pointer-events-none	 border-2 border-white rounded-full fixed top-0 left-0 z-20"
       variants={variants}
       animate="default"
     />
