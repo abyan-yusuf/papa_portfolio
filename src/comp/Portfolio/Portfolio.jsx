@@ -1,5 +1,5 @@
 import React from "react";
-import Video from "./VIdeo/Video";
+import Video from "./Video/Video";
 import thumbnail from '/thumbnail.png'
 import video from '/Sample.mp4'
 

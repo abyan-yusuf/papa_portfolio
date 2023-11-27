@@ -5,6 +5,7 @@ import Service from "./comp/Service/Service";
 import Skills from "./comp/Skills/Skills";
 import Portfolio from "./comp/Portfolio/Portfolio";
 import MarqueeComp from "./comp/Marquee/Marquee";
+import MouseFollow from "./comp/MouseFollow/MOuseFollow";
 const App = () => {
   return (
     <div className="bg-bodybc">
@@ -15,7 +16,8 @@ const App = () => {
       <Skills />
       <Portfolio />
       <MarqueeComp />
-     </div>
+      <MouseFollow />
+    </div>
   );
 };
 
