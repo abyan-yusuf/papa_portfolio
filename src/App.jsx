@@ -5,8 +5,8 @@ import Service from "./comp/Service/Service";
 import Skills from "./comp/Skills/Skills";
 import Portfolio from "./comp/Portfolio/Portfolio";
 import MarqueeComp from "./comp/Marquee/Marquee";
-import MouseFollow from "./comp/MouseFollow/MouseFollow";
 import Contact from "./comp/Contact/Contact";
+import MouseFollow from "./comp/MouseFollow/MouseFollow";
 const App = () => {
   return (
     <div className="bg-bodybc">
