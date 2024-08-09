@@ -3,7 +3,7 @@ const MarqueeComp = () => {
   return (
     <div className="py-20">
       <Marquee
-        className="h-52 ml-64 px-5 bg-gb w-[80vw] pt-0"
+        className="h-52 ml-64 px-5 bg-gb w-[(100%-16rem)!important] pt-0"
         pauseOnHover={true}
         speed={150}
       >
